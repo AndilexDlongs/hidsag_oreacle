@@ -1,4 +1,4 @@
-from .__version import __version__
+from ..__version import __version__
 
 GEOMET_T, GEOCHEM_T = "GEOMET", "GEOCHEM"
 MINERAL1_T, MINERAL2_T = "MINERAL1", "MINERAL2"
