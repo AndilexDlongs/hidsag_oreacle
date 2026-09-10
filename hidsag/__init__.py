@@ -1,4 +1,6 @@
-from ..__version import __version__
+from importlib.metadata import version
+
+__version__ = version("hidsag")
 
 GEOMET_T, GEOCHEM_T = "GEOMET", "GEOCHEM"
 MINERAL1_T, MINERAL2_T = "MINERAL1", "MINERAL2"

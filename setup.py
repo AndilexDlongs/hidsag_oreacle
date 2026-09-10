@@ -1,7 +1,10 @@
 import os
 from setuptools import setup, find_packages
+from pathlib import Path
+import runpy
 
-from .__version import __version__
+version_path = Path(__file__).resolve().parent / "__version.py"
+__version__ = runpy.run_path(str(version_path))["__version__"]
 
 here = os.path.abspath(os.path.dirname(__file__))
 
