@@ -1,7 +1,7 @@
 import os
 from setuptools import setup, find_packages
 
-from hidsag import __version__
+from hidsag.__version import __version__
 
 here = os.path.abspath(os.path.dirname(__file__))
 
